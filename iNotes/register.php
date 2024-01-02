@@ -109,11 +109,11 @@
                 $mail->isSMTP(); 
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'amanderwal.xyz@gmail.com';
-                $mail->Password = 'jprythitbczgwwsp';
+                $mail->Username = 'your_email';
+                $mail->Password = 'your_google_app_password';
                 $mail->SMTPSecure = 'tls';
                 $mail->Port = 587;
-                $mail->setFrom('amanderwal.xyz@gmail.com' , 'Dead Craft');
+                $mail->setFrom('your_email' , 'your_name');
                 $mail->addAddress( $userEmail , $userName );
                 $mail->isHTML(true);
                 $mail->Subject = 'Welcome to iNOTES';
